@@ -42,20 +42,6 @@ const PokemonStats = ({name, base}) => (
   </div>
 );
 
-PokemonStats.propTypes = {
-  name: PropTypes.shape({
-    english: PropTypes.string.isRequired,
-  }),
-  base: PropTypes.shape({
-    HP: PropTypes.number.isRequired,
-    Attack: PropTypes.number.isRequired,
-    Defense: PropTypes.number.isRequired,
-    "Sp. Attack": PropTypes.number.isRequired,
-    "Sp. Defense": PropTypes.number.isRequired,
-    Speed: PropTypes.number.isRequired,
-  })
-}
-
 function App() {
   const [filter, filterSet] = React.useState('');
   const [selectedItem, selectedItemSet] = React.useState(null);
